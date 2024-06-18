@@ -23,6 +23,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  VERSION: '2.1.7'
+  BUNDLEID: 'com.xiemu0129.Dopamine'
+
 jobs:
   build:
     runs-on: macos-13
